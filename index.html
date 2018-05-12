@@ -2,6 +2,7 @@
    <head>
       <link rel="stylesheet" href="styles.css" />
       <script src="webConfig.js"></script>
+      <script src="jquery-3.3.1.min.js"></script>
    </head>
    <body>
       <form id="mainForm" action="" method="">
@@ -28,6 +29,12 @@
 
          form.onsubmit = function (event) {
             event.preventDefault();
+            
+            $.ajax({
+              type: webConfig.verb,
+              url: webConfig.url,
+              data: $(form).serialize()
+            });
 
             var notification = document.createElement('p');
             notification.className = 'notification';
