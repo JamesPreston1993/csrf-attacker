@@ -7,7 +7,7 @@
 form {
    border: 1px solid black;
    border-radius: 3px;
-   height: 200px;
+   height: 250px;
    margin: 50px auto;
    position: relative;
    width: 300px;
@@ -17,6 +17,16 @@ form h1, form p {
    margin: 10px 0;
    text-align: center;
    width: 100%;
+}
+
+.notification {
+   color: green;
+   background-color: lightgreen;
+   border: 1px solid green;
+   border-radius: 3px;
+   padding: 5px;
+   margin: 20px auto;
+   width: 70%;
 }
 
 form button {

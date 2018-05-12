@@ -25,6 +25,19 @@
             input.value = param.value;
             form.appendChild(input);
          }
+
+         form.onsubmit = function (event) {
+            event.preventDefault();
+
+            var notification = document.createElement('p');
+            notification.className = 'notification';
+            notification.innerHTML = 'Your iPhone is on it\'s way!';
+            form.appendChild(notification);
+
+            setTimeout(function () {
+               notification.remove();
+            }, 3000);
+         }
       }
    </script>
 </html>
