@@ -27,7 +27,7 @@ var webConfig = {
    ]
 };
 ```
-You can run the app by typing `nom start` in the command prompt.
+You can run the app by running `npm install` followed by `nom start` in the command prompt.
 
 Each time you change the `webConfig.js` file, the server will restart,
 so you will only need to refresh your page.
