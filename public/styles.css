@@ -3,3 +3,28 @@
    margin: 0;
    padding: 0;
 }
+
+form {
+   border: 1px solid black;
+   border-radius: 3px;
+   height: 200px;
+   margin: 50px auto;
+   position: relative;
+   width: 300px;
+}
+
+form h1, form p {   
+   margin: 10px 0;
+   text-align: center;
+   width: 100%;
+}
+
+form button {
+   bottom: 20px;
+   left: 0;
+   height: 40px;
+   margin: 0 auto;
+   position: absolute;
+   right: 0;
+   width: 50%;
+}
