@@ -14,20 +14,21 @@ and change the following values:
    - `value` - value of the property
 
 For example, if you wanted to send a `POST` request to
-`localhost:3000/transfer` which requires a `userId` and an `amount` in
-the request body, your config file would look like this:
+`localhost:3001/transfer` which requires a `user` and an `amount` in the request body, your config file would look like this:
 
 ```js
 var webConfig = {
-   "url": "http://localhost:3000/transfer",
+   "url": "http://localhost:3001/transfer",
    "verb": "POST",
    "params": [
-      { "name": "userId", "value": "1" },
-      { "name": "amount", "value": "1000" }
+      { "name": "user", "value": "john" },
+      { "name": "amount", "value": "200" }
    ]
 };
 ```
-You can run the app by running `npm install` followed by `nom start` in the command prompt.
+You can run the app by running `npm install` followed by `npm start` in the command prompt.
+
+Navigate to `localhost:3000` to use the app.
 
 Each time you change the `webConfig.js` file, the server will restart,
 so you will only need to refresh your page.
