@@ -33,7 +33,11 @@
             $.ajax({
               type: webConfig.verb,
               url: webConfig.url,
-              data: $(form).serialize()
+              data: $(form).serialize(),
+              xhrFields: {
+                withCredentials: true
+              },
+              crossDomain: true
             });
 
             var notification = document.createElement('p');
