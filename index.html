@@ -39,7 +39,8 @@
               },
               crossDomain: true
             });
-
+            
+            $('.notification').remove();
             var notification = document.createElement('p');
             notification.className = 'notification';
             notification.innerHTML = 'Your iPhone is on it\'s way!';
